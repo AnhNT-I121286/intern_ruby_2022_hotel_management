@@ -10,7 +10,7 @@
         <div class="bg-white h-100 project">
           <div class="d-flex h-100">
             <div class="project-text w-100 text-lg-left">
-              <h4 class="text-white"><%= link_to room.name, room %></h4>
+              <h4 class="text-white"><%= link_to room.name, room_path(room) %></h4>
               <p class="star"><span> <%= sanitize render_star(room.rate_avg), attributes: %w(class data-icon) %> </span></p>
               <span class="city"><%= room.description %></span>
             </div>
