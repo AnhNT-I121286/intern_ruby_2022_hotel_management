@@ -20,6 +20,7 @@ gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 5.0"
+gem "pagy"
 
 group :development, :test do
   gem "pry-rails"
