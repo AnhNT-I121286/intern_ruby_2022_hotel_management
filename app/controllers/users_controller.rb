@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   end
 
   def logged_in_user
-    return if logged_in?
+    return if user_signed_in?
 
     flash[:danger] = t ".login_message"
     redirect_to login_url
